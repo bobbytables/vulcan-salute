@@ -13,6 +13,7 @@ export default Router.map(function() {
   });
 
   this.resource('backends', function(){
-    this.resource('backend', { path: ':backendId' }, function() {});
+    this.route('new');
+    this.route('edit', { path: '/:backendId/edit' })
   })
 });

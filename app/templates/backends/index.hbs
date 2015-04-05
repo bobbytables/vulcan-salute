@@ -12,7 +12,7 @@
       <tbody>
       {{#each backend in model}}
         <tr>
-          <td>{{#link-to "backend.index" backend.id}} {{backend.id}} {{/link-to}}</td>
+          <td>{{#link-to "backends.edit" backend.id}} {{backend.id}} {{/link-to}}</td>
           <td>{{backend.type}}</td>
         </tr>
       {{/each}}
