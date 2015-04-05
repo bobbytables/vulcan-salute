@@ -1,0 +1,8 @@
+<ul>
+{{#each frontend in model}}
+  <li>
+    {{#link-to "frontend.index" frontend.id}} {{frontend.id}} {{/link-to}}
+    {{frontend.backendId}} {{frontend.route}}
+  </li>
+{{/each}}
+</ul>
