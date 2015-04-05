@@ -39,6 +39,11 @@ Make use of the many generators for code, try `ember help generate` for more det
 * `ember build` (development)
 * `ember build --environment production` (production)
 
+### Building with Docker
+
+* `docker build -t vulcan-salute .`
+* `docker run -p 80:80 vulcan-salute`
+
 ### Deploying
 
 Specify what it takes to deploy your app.
