@@ -3,9 +3,7 @@ export default DS.RESTSerializer.extend({
   primaryKey: 'Id',
 
   keyForAttribute(key){
-    console.log(key);
     return key.classify();
-    // this._super(key);
   },
 
   extractFind(store, type, payload, id, requestType) {

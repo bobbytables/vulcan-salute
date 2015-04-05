@@ -1,5 +1,4 @@
 export default DS.Model.extend({
-  backendId: DS.attr('string'),
-  route: DS.attr(),
+  settings: DS.attr(),
   type: DS.attr('string'),
 });

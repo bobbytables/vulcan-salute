@@ -7,7 +7,12 @@ var Router = Ember.Router.extend({
 
 export default Router.map(function() {
   this.route('hosts');
+
   this.resource('frontends', function(){
     this.resource('frontend', { path: ':frontendId' }, function() {});
   });
+
+  this.resource('backends', function(){
+    this.resource('backend', { path: ':backendId' }, function() {});
+  })
 });
